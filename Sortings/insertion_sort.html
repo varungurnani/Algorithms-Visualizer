@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Algo Visualizer - Insertion Sort</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="./second_styles.css" type="text/css" rel="stylesheet">
+
+        <noscript>JavaScript is required for this website. Please allow JavaScript and refresh the page.</noscript>
+
+    </head>
+
+<body>
+    <div class="sidenav" id="sidenav">
+        <button class="sidenav-btn topnav-element ripple open" id="sidenav-menu"><i class="material-icons icon"><img src="../Images/new-burger.svg" height=40 alt="Menu Icon"/></i></button>
+        <br/><br/>
+
+        <div class="sidenav-subtitle no-remove">Sortings</div>
+        <a href="../Sortings/bubble_sort.html" class="sidenav-element no-remove">Bubble Sort</a>
+        <a href="../Sortings/insertion_sort.html" class="sidenav-element no-remove">Insertion Sort</a>
+        <a href="../Sortings/selection_sort.html" class="sidenav-element no-remove">Selection Sort</a>
+        <a href="../Sortings/quick_sort.html" class="sidenav-element no-remove">Quick Sort</a>
+        <a href="../Sortings/merge_sort.html" class="sidenav-element no-remove">Merge Sort</a>
+        <a href="../Sortings/heap_sort.html" class="sidenav-element no-remove">Heap Sort</a>
+        
+    </div>
+
+    <div class="topnav" style="display: flex;">
+        <button class="sidenav-btn topnav-element ripple open" id="sidenav-menu"><i class="material-icons icon"><img src="../Images/new-burger.svg" height=40 alt="Menu Icon"/></i></button>
+        <a href="../index.html" class="topnav-element topnav-element-text">ALGORITHMS VISUALIZER</a>
+
+    </div>
+
+    <br/><br/><br/>
+    
+    <section style="display: flex; justify-content: center;">
+        <h4 style="color: yellow;"> <u>The Insertion Sort</u></h4>
+    </section>
+    <section style="display: flex; justify-content: center; align-items: center;">
+        
+        <div style="display: inline-block;">
+            <p style="display: inline-block; color: burlywood">Put elements of the array here: </p>
+            <div id="input-container" style="display: inline-block;">
+                <input type="text" id="input-array" placeholder="ex: 4,2,7,1,9,5,3,8,6">
+                <button onclick="processInput()">Create</button>
+            </div>
+            
+        </div>
+        <p style="display: inline-block; color: burlywood">&nbsp&nbsp&nbsp&nbsp&nbsp OR &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+        <button onclick="generateRandomArray()">Randomize</button>
+    </section>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div class="containerX" id="array-containerX">
+        <!-- Elements will be dynamically added here -->
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 40px;">
+        <button onclick="insertion_sort()">Sort</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript" src="./second_index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

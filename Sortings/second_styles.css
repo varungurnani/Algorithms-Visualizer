@@ -1,0 +1,27 @@
+.containerX {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+    margin: 0;
+    gap: 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.circle {
+    /* Existing styles */
+    transition: left 1s ease; /* Add this line to enable transitions */
+}
+
